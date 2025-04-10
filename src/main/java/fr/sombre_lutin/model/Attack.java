@@ -43,8 +43,10 @@ public class Attack {
     public boolean isSuccess() {
         // Crée une instance de la classe Random
         Random random = new Random();
+        int test = random.nextInt(100);
+        System.out.println("Test: " + test + ", Probability: " + this.probability);
         // Génère un nombre aléatoire entre 0 et 99 et le compare à la probabilité de l'attaque
-        return random.nextInt(100) < this.probability;
+        return test < this.probability;
     }
 
 }

@@ -48,6 +48,10 @@ public abstract class Character {
         }
     }
 
+    public void displayStatus(){
+        System.out.println(this.name + " a " + this.getLife());
+    }
+
     public abstract Attack choiceAttack();
 }
 
