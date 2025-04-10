@@ -1,6 +1,6 @@
 package fr.sombre_lutin.model;
 
-public class Character {
+public abstract class Character {
     // Attributs de la classe Character
     private String name;
     private int life;
@@ -47,4 +47,9 @@ public class Character {
             System.out.println("l' attaque de " + car.getName() + " a échoué");
         }
     }
+
+    public abstract Attack choiceAttack();
 }
+
+
+
